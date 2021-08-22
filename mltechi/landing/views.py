@@ -14,7 +14,7 @@ data = {
             { 'https://github.com/Treelovah' : 'fa fa-github' },
         ],
         'core' : [
-            { 'https://ourcloud.us/s/LsQqifjcK6zrQTN' : 'Resume' },
+            { 'https://ourcloud.us/s/W6iG8FGAGoMRn6b' : 'Resume' },
             { 'https://ourcloud.us/s/yS8MKRZmNwmPM6z' : 'Certifications'},
             { 'https://ourcloud.us/s/GgXTB4ZoNz7M8wY' : 'Reading Material' },
             { 'https://kryptsec.com' : 'KryptSec' },
