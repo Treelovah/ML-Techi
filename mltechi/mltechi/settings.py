@@ -21,10 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
-ADMIN_ENABLED = False
+SECRET_KEY = "ABCDEFG"
+# os.environ['SECRET_KEY']
+ADMIN_ENABLED = True
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['mltechi.com', 'localhost']
 
@@ -117,7 +118,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT = '/var/www/mltechi/mltechi/static'
+
+# Development Settings
+#
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 STATIC_URL = '/static/'
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
+
+# Production Settings
+# STATIC_ROOT = '/var/www/mltechi/mltechi/static'
+# STATIC_URL = '/static/'
+# CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
